@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "target": "es2018",
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "strict": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": ".",
+    "outDir": "./built",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "built"
+  ]
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+</body>
+<script type="application/javascript">
+  fetch('register', {
+    method: 'post',
+    body: JSON.stringify({
+      hash: decodeURIComponent(window.location.hash).replace('#', '').split('&').map(s => s.split('=')).reduce((p, c) => { p[c[0]] = c[1]; return p; }, {}),
+      query: decodeURIComponent(window.location.toString().split('?')[1] || '').split('&').map(s => s.split('=')).reduce((p, c) => { p[c[0]] = c[1]; return p; }, {})
+    }),
+    headers: { 'content-type': 'application/json' }
+  }).then(r => window.close())
+</script>
+
+</html>

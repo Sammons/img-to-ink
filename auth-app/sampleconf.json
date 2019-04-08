@@ -1,0 +1,8 @@
+{
+  "secret": "",
+  "clientId": "",
+  "scopes": "office.onenote_update,wl.signin,wl.offline_access",
+  "redirect": "http://localhost:30662/",
+  "gateway": "https://login.live.com/oauth20_authorize.srf",
+  "authority": "https://login.live.com/oauth20_token.srf"
+}
